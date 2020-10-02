@@ -28,3 +28,6 @@ Comment any thing you don't want out... Example:
 	"SetUACHigh",
 	"EnableSMB1",
 ```
+
+## Run
+	powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/rassweiler/win10script/master/win10debloat.ps1')"
