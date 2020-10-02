@@ -35,7 +35,7 @@ $tweaks = @(
 	"Install7Zip",
 	#"InstallNotepadplusplus",
 	#"InstallMediaPlayerClassic",
-	"InstallVSCode",
+	"InstallCode",
 	"InstallKeepassXC",
 	"InstallVLC",
 	"InstallGOG",
