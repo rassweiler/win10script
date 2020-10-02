@@ -41,6 +41,8 @@ $tweaks = @(
 	"InstallGOG",
 	"InstallDiscord",
 	"InstallSteam",
+	"InstallFirefox",
+	"InstallStreamDeck",
 
 	### Windows Apps
 	"DebloatAll",
@@ -260,6 +262,16 @@ Function InstallGOG {
 Function InstallDiscord {
 	Write-Output "Installing Discord"
 	choco install discord -y
+}
+
+Function InstallFirefox {
+	Write-Output "Installing Firefox"
+	choco install firefox -y
+}
+
+Function InstallStreamDeck {
+	Write-Output "Installing StreamDeck"
+	choco install streamdeck -y
 }
 
 ##########
