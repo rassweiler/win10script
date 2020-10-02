@@ -40,6 +40,7 @@ $tweaks = @(
 	"InstallVLC",
 	"InstallGOG",
 	"InstallDiscord",
+	"InstallSteam",
 
 	### Windows Apps
 	"DebloatAll",
