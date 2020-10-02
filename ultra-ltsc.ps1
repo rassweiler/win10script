@@ -32,7 +32,8 @@ $tweaks = @(
 	### External Program Setup
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"Install7Zip",
-	"InstallNotepadplusplus",
+	#"InstallNotepadplusplus",
+	"InstallVSCode",
 
 	### Windows Apps
 	"DebloatAll",
@@ -107,10 +108,10 @@ $tweaks = @(
 	"ShowTaskManagerDetails"        # "HideTaskManagerDetails",
 	"ShowFileOperationsDetails",    # "HideFileOperationsDetails",
 	"DisableFileDeleteConfirm",	# "EnableFileDeleteConfirm",    
-	#"HideTaskbarSearch",
+	"HideTaskbarSearch",
 	"ShowTaskbarSearchIcon",      # "ShowTaskbarSearchBox",
 	"HideTaskView",                 # "ShowTaskView",
-	# "ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
+	"ShowSmallTaskbarIcons",        # "ShowLargeTaskbarIcons",
 	# "SetTaskbarCombineWhenFull",    # "SetTaskbarCombineNever",     # "SetTaskbarCombineAlways",
 	# "HideTaskbarPeopleIcon",        # "ShowTaskbarPeopleIcon",
 	"ShowTrayIcons",                # "HideTrayIcons",
@@ -125,7 +126,7 @@ $tweaks = @(
 
 	### Explorer UI Tweaks ###
 	"ShowKnownExtensions",          # "HideKnownExtensions",
-	# "ShowHiddenFiles",              # "HideHiddenFiles",
+	"ShowHiddenFiles",              # "HideHiddenFiles",
 	"HideSyncNotifications"         # "ShowSyncNotifications",
 	# "HideRecentShortcuts",          # "ShowRecentShortcuts",
 	"SetExplorerThisPC",            # "SetExplorerQuickAccess",
@@ -177,9 +178,10 @@ $tweaks = @(
 
 	### Unpinning ###
 	"UnpinStartMenuTiles",
-	"UnpinTaskbarIcons"
+	"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
+	"InstallKeepassXC"
 )
 
 #########
@@ -204,7 +206,7 @@ Function InstallAdobe {
 
 Function InstallJava {
 	Write-Output "Installing Java"
-	choco install jre8 -y
+	choco install jre14 -y
 }
 
 Function Install7Zip {
@@ -220,6 +222,21 @@ Function InstallNotepadplusplus {
 Function InstallMediaPlayerClassic {
 	Write-Output "Installing Media Player Classic (VLC Alternative)"
 	choco install mpc-hc -y
+}
+
+Function InstallKeepassXC {
+	Write-Output "Installing KeepassXC"
+	choco install keepassxc -y
+}
+
+Function InstallSteam {
+	Write-Output "Installing Steam"
+	choco install steam -y
+}
+
+Function InstallCode {
+	Write-Output "Installing VSCode"
+	choco install vscode -y
 }
 
 ##########
